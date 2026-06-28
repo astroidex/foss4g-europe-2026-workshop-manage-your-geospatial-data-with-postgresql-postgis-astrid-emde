@@ -6,4 +6,7 @@ Workshop material for PostgreSQL/PostGIS workshop
 
 https://talks.osgeo.org/foss4g-europe-2026-workshops/talk/J9RBVQ/
 
+
+Uses data from https://geo-spatial.org/vechi/download/romania-seturi-vectoriale
+
 [![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
