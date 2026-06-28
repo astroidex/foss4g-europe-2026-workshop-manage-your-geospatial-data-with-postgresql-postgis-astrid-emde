@@ -70,12 +70,8 @@ SELECT version(), postgis_version(), postgis_full_version();
   * Open Street Map data for the FOSS4G region
   * https://live.osgeo.org/en/overview/osm_dataset_overview.html
 * Romania Vector Data
-  * database: romania_vector
   * https://geo-spatial.org/vechi/download/romania-seturi-vectoriale
-  * data is in /home/user/data/romania_vector
-* Platforma GIS Timișoara
-  * https://www.geodata-services.com/en/projects-case-studies/gistm-gis-platform-of-timi-oara-municipality/
-  * https://harta.primariatm.ro/
+
 
 
 ## Additional information
@@ -399,6 +395,8 @@ SELECT ST_AsText(geom), geom FROM cities; -- with SRID
 SELECT ST_AsEWKT(geom), geom FROM cities; -- without SRID
 ``` 
 
+![](img/postgis_wkt_ewkt.png)
+
 ## QGIS to visualize your data
 
 * You can visualize, edit and import/export data from a PostgreSQL/PostGIS database
@@ -510,7 +508,7 @@ SELECT gid, name, round(ST_Area(geom, true)) as area
 
 ### Excercise 7: Create a view with the centroid for each country
 
-* Create a view with the centroid for each province
+* Create a view with the centroid for each country
 * Try to load the view in QGIS
 * Have a look at your geometry_columns view
 * Check where the centroid of France is and the centroid of Bosnia and Herzegovina.
